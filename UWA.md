@@ -1,6 +1,8 @@
 <i>H. Ghannadrezaii and J. Bousquet, "Securing a Janus-Based Flooding Routing Protocol for Underwater Acoustic Networks," OCEANS 2018 MTS/IEEE Charleston, Charleston, SC, 2018, pp. 1-7.
 </i>
 
+
+
 # 1.Janus标准
 
 ### 概括
@@ -19,7 +21,6 @@ Janus是第一个全球水声网络标准（UWAN），开发一种标准化的�
 
 其中，ADB又由8bit的信道保留位和26bit有效数据位组成
 
-------
 
 
 # 2.传统协议
@@ -40,6 +41,7 @@ Janus是第一个全球水声网络标准（UWAN），开发一种标准化的�
 ------
 
 
+
 # 3.本文的贡献
 
 - 对混合网络体系结构的描述，该体系结构使用蜂窝拓扑作为主模式，并在网关sink节点未响应时，切换到ad-hoc模式。
@@ -57,6 +59,7 @@ Section 4: 对网络模型进行安全加固
 Section 5: 仿真数据结果
 
 Section6: 结论
+
 
 
 # 4.网络结构描述
@@ -100,6 +103,7 @@ Section6: 结论
 ​       在物理层，Janus标准描述了跳频二进制频移键控(FH/BFSK)调制。FH/BFSK以其在恶劣水声传播中的鲁棒性而闻名。 
 
 
+
 # 5.优化泛洪路由算法（针对ad hoc模式）
 
 **UWAN中路由算法设计的主要挑战是获得低的端到端延迟、低的每比特能耗和高的PDR。**
@@ -126,6 +130,7 @@ Section6: 结论
 ### 节点r-1的超时重传算法描述
 
 对于r-1节点，在发送一个数据包后，开始计时，如果在2((n+1)-i) (R~T~/v)秒内收到了下一跳r节点的ACK，则从自己的缓冲区中删除刚才发送的数据包。否则，超时重传。==最多重传三次==
+
 
 
 # 6.安全加固
